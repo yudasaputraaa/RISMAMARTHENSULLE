@@ -1,0 +1,86 @@
+/* 🔹 GLOBAL STYLES */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    text-shadow: 8px 8px 10px rgb(0, 0, 0);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    transition: background-color 0.3s ease-in-out;
+}
+
+/* 🔹 NAVBAR */
+.navbar-transparent {
+    background: transparent;
+    transition: background 0.3s ease-in-out;
+}
+
+.navbar-solid {
+    background: #ff007d;
+    transition: background 0.3s ease-in-out;
+}
+
+.nav-link {
+    color: #ff007d;
+    transition: color 0.3s;
+}
+
+.nav-link:hover {
+    color: #ffffff;
+}
+
+/* 🔹 MOBILE MENU */
+#mobile-menu {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.8);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    visibility: hidden;
+    transform: scale(1.1);
+    transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out, visibility 0.3s ease-in-out;
+}
+
+#mobile-menu.active {
+    opacity: 1;
+    visibility: visible;
+    transform: scale(1);
+}
+
+.mobile-nav-link {
+    font-size: 24px;
+    color: #ffffff;
+    margin-bottom: 15px;
+    transition: color 0.3s ease-in-out;
+}
+
+.mobile-nav-link:hover {
+    color: #ff007d;
+}
+
+/* 🔹 HERO SECTION */
+.hero-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    min-height: 100vh;
+    padding: 20px;
+    transition: filter 0.3s ease-in-out;
+}
+
+/* Background untuk section */
+.section-bg {
+    background-image: url('png/RISMABACKGROUND.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
